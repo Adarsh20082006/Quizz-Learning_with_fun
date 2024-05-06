@@ -1,5 +1,5 @@
 let i = 0;
-document.querySelector(".newQues").style.display = "none";
+document.querySelector(".new").style.display = "none";
 
 let a_right = document.querySelector(".a");
 let b_right = document.querySelector(".b");
@@ -122,4 +122,5 @@ document.querySelector(".no").addEventListener("click", () => {
 
     document.querySelector(".done1").classList.add("done");
     document.querySelector(".done1").style.visibility = "hidden";
-})
+});
+export {i};
