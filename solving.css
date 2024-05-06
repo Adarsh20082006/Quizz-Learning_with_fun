@@ -1,0 +1,11 @@
+body{
+    width:95%;
+    height: 97.5vh;
+    background: linear-gradient(rgb(240, 17, 17) ,purple);
+    font-size: 22px;
+    text-align: left;
+    margin-left: 20px;
+}
+span{
+    font-size:large;
+}

@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+}
+ul{
+    height: 100%;
+   display: flex;
+    list-style: none;
+    margin-right: 10px;
+    gap: 20px;
+    align-items: center;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+.icon{
+  margin-left: 10px;
+  font-size: larger;
+  font-weight: 800;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    height: 30px;
+    width:100%;
+    background: rgb(210, 210, 210);
+}

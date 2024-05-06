@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating quizz</title>
+    <link rel="stylesheet" href="creating.css">
+</head>
+<body>
+   <button class="complete">Complete</button>
+   <h2>Please varify the questions and answers before enter...</h2> 
+   <section class="questions">Questions are listed here:- </section>
+   <form id="form" >
+    <div class="question q1" id="ques">
+    <label>Question No.<span class="number">1</span></label><br>
+    <textarea name="q1" id="1" cols="50" rows="4" onmouseenter="this.textContent=''" onmouseout="this.textContent='Enter the question here'" required>Enter the question here</textarea><br>
+      <span>(a)</span> <input type="text"  class="Option1"  placeholder="Option 1" id="a1"><br>
+      <span>(b)</span> <input type="text" class="Option2"  placeholder="Option 2" id="b1"><br>
+      <span>(c)</span> <input type="text" class="Option3"  placeholder="Option 3" id="c1"><br>
+      <span>(d)</span> <input type="text" class="Option4"  placeholder="Option 4" id="d1"><br>
+      <label >Correct option:</label>
+      <input type="radio" name="correct" class="a">a      
+      <input type="radio" name="correct" class="b">b
+      <input type="radio" name="correct" class="c">c
+      <input type="radio" name="correct" class="d">d
+
+      </div>
+      <button type="button" class="nextQues" onclick="addingques()">Add</button>
+      <a class="new" href="#form"><button type="button" class="newQues" onclick="addingNew()">Add another question</button></a>
+      <div class="done">Completed...❓<br>
+         <input type="button" class="yes" value="Yes👍">
+         <input type="button" class="no" value="No👎">
+
+      </div>
+      <!-- <button class="adds" onclick="addingques()">Add another question</button> -->
+   </form>
+   <script src="creating.js"></script>
+</body>
+</html>

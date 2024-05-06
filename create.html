@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a quizz</title>
+    <link rel="stylesheet" href="create.css">
+    <link rel="html" href="creating.html" type="text/html">
+</head>
+<body>
+      <h1>Welcome..!</h1>
+      <h2>Let's create a quiz...</h2>
+      <form ><div class="name">
+        <label for="name">Enter a title for your quiz:-</label><br>
+        <input type="text" id="name" autocomplete="off" placeholder="Name of your quiz" required></div><br>
+        <div class="type">
+        <label for="type">Is your quiz is private or public?</label><br>
+        <input type="radio" class="public" name="type">Public <br>
+        <input type="radio" class="private" name="type">Private <br>
+        </div>
+        <div class="password">
+          <label for="password">Then, Set a password..</label><br>
+          <input type="password" id="password" autocomplete="off" placeholder="Password"><br>
+          <input type="checkbox" class="show-password" >Show password
+        </div>
+        <a href="creating.html"><input type="button" class="create" onclick="creating()" value="Create"></a>
+      </form> 
+      <script src="create.js"></script>
+</body>
+</html>
