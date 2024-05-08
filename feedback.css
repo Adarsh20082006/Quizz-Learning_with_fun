@@ -1,0 +1,87 @@
+.star{
+    display: inline-flex;
+    border: 2px solid rgb(161, 211, 96);
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+h2{
+    text-align: center;
+}
+body{
+    background-color: aquamarine;
+}
+.head{
+    display: block;
+    text-align: center;
+    margin: 20px 0px;
+}
+.body{
+    display: block;
+    text-align: center;
+}
+.body .describe{
+    margin: 10px 10px 30px;
+    padding: 15px;
+    font-size: large;
+    background-color: rgb(184, 146, 190);
+    border-radius: 10px;
+}
+.body .submit {
+    background-color: rgb(154, 67, 236);
+    height: 30px;
+    width: 90px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 1px 1px 2px black;
+    font-size: 18px;
+    padding-top: 3px;
+    margin: auto;
+}
+.body .submit a{
+    color: rgba(245, 245, 245, 0.715);
+    text-decoration: none;
+}
+.back button{
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    background-color: rgb(206, 116, 116);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:370px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        width:48vh;
+        background-color: rgb(61, 174, 174);
+        height: auto;
+        padding-bottom: 20px;
+        margin:25% auto 25%;
+        border: 2px solid red;
+        outline: 1px solid rgb(207, 207, 124);
+        border-radius: 5px;
+    }
+    .body .describe{
+        margin: 10px 20px;
+        width: 300px;
+        height: 130px;
+        background-color: rgb(155, 116, 161);
+    }
+    
+    h2{
+        text-align: center;
+    }
+    .back{
+        position:relative;
+        bottom: 95px;
+        right: 155px;
+    }
+}

@@ -2,7 +2,7 @@
     margin: 0px;
 }
 ul{
-    height: 100%;
+    height: 35px;
    display: flex;
     list-style: none;
     margin-right: 10px;
@@ -10,12 +10,19 @@ ul{
     align-items: center;
     text-decoration: none;
 }
-a{
+.a{
+   
+    padding-top: 5px;
     text-decoration: none;
+    height: 28px;
+    text-align: center;
+}
+.a:hover{
+    background-color:rgba(255, 173, 51, 0.541) ;
 }
 .icon{
   margin-left: 10px;
-  font-size: larger;
+  font-size: 28px;
   font-weight: 800;
 }
 nav{
@@ -25,5 +32,26 @@ nav{
 
     height: 30px;
     width:100%;
-    background: rgb(210, 210, 210);
+    background: rgb(255, 0, 0);
+}
+body{
+    height: 100vh;
+    background: linear-gradient(rgb(255, 112, 112),rgb(207, 45, 45),purple);
+    background-repeat: no-repeat;
+}
+.create,.solve{
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    text-align: center;
+}
+input[type='button']{
+    height: 40px;
+    border-radius: 10px;
+    background: rgb(249, 233, 64);
+    margin-top: 35px;
+    cursor: pointer;
 }
