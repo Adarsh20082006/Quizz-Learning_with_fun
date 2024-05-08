@@ -1,6 +1,6 @@
 let i = 0;
 document.querySelector(".new").style.display = "none";
-
+let answer="";
 let a_right = document.querySelector(".a");
 let b_right = document.querySelector(".b");
 let c_right = document.querySelector(".c");
@@ -59,24 +59,28 @@ function addingques() {
 
 
     if (a_right.checked) {
+         answer+="a"+i;
         op_1.setAttribute("checked", "checked");
         //    op_1.setAttribute("disabled","disabled");
         op_2.setAttribute("disabled", "disabled");
         op_3.setAttribute("disabled", "disabled");
         op_4.setAttribute("disabled", "disabled");
     } else if (b_right.checked) {
+        answer+="b"+i;
         op_2.setAttribute("checked", "checked");
         op_1.setAttribute("disabled", "disabled");
         // op_2.setAttribute("disabled","disabled");
         op_3.setAttribute("disabled", "disabled");
         op_4.setAttribute("disabled", "disabled");
     } else if (c_right.checked) {
+        answer+="c"+i;
         op_3.setAttribute("checked", "checked");
         op_1.setAttribute("disabled", "disabled");
         op_2.setAttribute("disabled", "disabled");
         // op_3.setAttribute("disabled","disabled");   
         op_4.setAttribute("disabled", "disabled");
     } else if (d_right.checked) {
+        answer+="d"+i;
         op_4.setAttribute("checked", "checked");
         op_1.setAttribute("disabled", "disabled");
         op_2.setAttribute("disabled", "disabled");
@@ -123,4 +127,4 @@ document.querySelector(".no").addEventListener("click", () => {
     document.querySelector(".done1").classList.add("done");
     document.querySelector(".done1").style.visibility = "hidden";
 });
-export {i};
+export default i ; 

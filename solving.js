@@ -1,5 +1,5 @@
 document.body.innerHTML=localStorage.getItem("quiz");
-// import {i} from "./creating.js"
+// import * as i from "/creating.js"
 
 let answer="";
 let par=document.querySelectorAll("p");
@@ -9,7 +9,8 @@ for(let n=0;n<parLen;n++){
        answer+=0;
     }
   else if(par[n].querySelectorAll("[type='radio']")[1].checked){
-    answer+=1;    }
+    answer+=1;    
+  }
     else if(par[n].querySelectorAll("[type='radio']")[2].checked){
         answer+=2;
     }
@@ -17,24 +18,24 @@ for(let n=0;n<parLen;n++){
         answer+=3;
     }
   
-}console.log(answer);
-
+}console.log(answer );
+let spans=document.querySelectorAll("p span")
 let radio=document.querySelectorAll("p input[type='radio']");
 let radLen=document.querySelectorAll("p input[type='radio']").length;
 for(let m=0;m<=radLen-1;m++){
 radio[m].removeAttribute("disabled");
 radio[m].removeAttribute("checked");
 }
-let rad=document.querySelectorAll("[type='radio']");
-for(let n=0;n<4;n++){
-    rad[n].addEventListener("click",(e)=>{
-        if(n==answer[0]){
-            e.target.style.color="green"
-            radio[n].setAttribute("checked","checked")
+for(let j=0;j<parLen;j++){
+for(let k=0;k<radLen;k++){
+   radio[k].addEventListener("click",()=>{
+        if(k==answer[j]){
+            spans[k].style.color="green";
+            radio[k].setAttribute("checked","checked");
         }
         else{
-            e.target.style.color="red" 
+            spans[k].style.color="red" 
         }
     })
   
-}
+}}
