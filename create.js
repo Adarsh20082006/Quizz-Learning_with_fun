@@ -1,9 +1,9 @@
-let private=document.querySelector(".private");
-private.addEventListener("click",()=>{
+let privates=document.querySelector(".private");
+privates.addEventListener("click",()=>{
     document.querySelector(".password").style.display="block";
 })
-let public=document.querySelector(".public");
-public.addEventListener("click",()=>{
+let publics=document.querySelector(".public");
+publics.addEventListener("click",()=>{
     document.querySelector(".password").style.display="none";
 })
 let show=document.querySelector(".show-password");
@@ -14,8 +14,20 @@ show.addEventListener("click",()=>{
         document.getElementById("password").type="text"
     }
 })
-function creating(){
-    const password=document.getElementById("password").value;
-    const name=document.getElementById("password").value;
-    const type=document.querySelector("input[name='type']:checked").value;
+ function creating(){
+    let sec=document.createElement("section");
+    document.body.appendChild(sec);
+    let span1=document.createElement("span").classList.add("q-name");
+    let aside=document.createElement("aside").classList.add("type");
+    let span2=document.createElement("span").classList.add("c-name");
+    sec.appendChild(span1,aside,span2);
+    span1.textContent=qName;
+    span2.textContent=cName;   
+    aside.textContent=type;
 }
+    const cName=document.getElementById("c-name").value;
+    const password=document.getElementById("password").value;
+    const qName=document.getElementById("name").value;
+    const type=document.querySelector("input[name='type']:checked").value;
+
+export {cName,password,qName,type,creating};

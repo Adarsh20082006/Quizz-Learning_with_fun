@@ -1,10 +1,11 @@
 let i = 0;
-document.querySelector(".new").style.display = "none";
+document.querySelector(".newQues").style.display = "none";
 let answer="";
 let a_right = document.querySelector(".a");
 let b_right = document.querySelector(".b");
 let c_right = document.querySelector(".c");
 let d_right = document.querySelector(".d");
+document.querySelector(".nextQues").addEventListener("click",addingques)
 function addingques() {
     i++;
     document.querySelector(".questions").style.display = "block";
@@ -93,7 +94,7 @@ function addingques() {
         document.querySelector(".complete").style.display = "block"
     }
 }
-
+document.querySelector(".newQues").addEventListener("click",addingNew)
 function addingNew() {
     document.querySelector("#ques").style.display = "block";
     document.querySelector(".number").textContent = i + 1;
@@ -127,4 +128,5 @@ document.querySelector(".no").addEventListener("click", () => {
     document.querySelector(".done1").classList.add("done");
     document.querySelector(".done1").style.visibility = "hidden";
 });
-export default i ; 
+
+// export default i ; 
