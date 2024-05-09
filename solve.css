@@ -11,6 +11,11 @@ body{
 h2{
     text-align: center;
     margin: 10px auto;
+}.no{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
 }
 section{
     border: 2px solid black;
@@ -24,6 +29,9 @@ section{
     font-size: 25px;
     font-weight: 500;
     position: relative;
+}.c-name{
+    display: inline-block;
+    width: 80%;
 }
 .type{
     position: relative;
@@ -39,7 +47,7 @@ section{
     border: 1px solid black;
     cursor: pointer;
     position: relative;
-    left:170px;
+    right: 0;
     height: 30px;
     width: 80px;
     border-radius: 10px;

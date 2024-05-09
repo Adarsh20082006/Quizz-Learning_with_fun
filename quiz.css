@@ -11,8 +11,9 @@ ul{
     text-decoration: none;
 }
 .a{
-   
-    padding-top: 5px;
+    color: rgb(124, 160, 198);
+   font-size: large;
+    padding: 5px 3px 0px 3px;
     text-decoration: none;
     height: 28px;
     text-align: center;
@@ -54,4 +55,8 @@ input[type='button']{
     background: rgb(249, 233, 64);
     margin-top: 35px;
     cursor: pointer;
+    font-size: large;
+}
+input[type='button']:hover{
+    background: rgba(249, 233, 64, 0.774); 
 }

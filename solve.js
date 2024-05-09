@@ -1,8 +1,13 @@
-// import { creating} from "./create.js";
-// creating()
-
-
-// document.querySelector(".q-name").textContent=qName
-// document.querySelector(".type").textContent=type;
-// document.querySelector(".c-name").textContent=cName;
-// const password=password;
+// import {cName,password,qName,type, creating} from "./create.js";
+document.querySelector(".q-name").textContent=localStorage.getItem("qName");
+document.querySelector(".type").textContent=localStorage.getItem("type");
+document.querySelector(".c-name").textContent=localStorage.getItem("cName");
+const password=localStorage.getItem("password");;
+// let func=localStorage.getItem("func");
+// func;
+if(localStorage.getItem("qName")==null){
+    document.querySelector("section").style.display="none";
+    document.querySelector("body").innerHTML="<h2 class='no'>No quizzes are added yet</h2>"
+}else{
+    document.querySelector("section").style.display="block";  
+}

@@ -1,4 +1,4 @@
-let i = 0;
+export let i = 0;
 document.querySelector(".newQues").style.display = "none";
 let answer="";
 let a_right = document.querySelector(".a");
@@ -110,8 +110,9 @@ function addingNew() {
     c_right.removeAttribute("checked", "checked");
     d_right.removeAttribute("checked", "checked");
 }
+let iValue="";
 document.querySelector(".complete").addEventListener("click", () => {
-
+   iValue=i;
     document.querySelector(".done").classList.add("done1");
     document.querySelector(".done1").style.visibility = "visible";
 
@@ -128,5 +129,5 @@ document.querySelector(".no").addEventListener("click", () => {
     document.querySelector(".done1").classList.add("done");
     document.querySelector(".done1").style.visibility = "hidden";
 });
-
-// export default i ; 
+// export {iValue};
+ 
