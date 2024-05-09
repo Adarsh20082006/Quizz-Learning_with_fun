@@ -5,9 +5,9 @@ document.querySelector(".c-name").textContent=localStorage.getItem("cName");
 const password=localStorage.getItem("password");;
 // let func=localStorage.getItem("func");
 // func;
-if(localStorage.getItem("qName")==null){
+if(localStorage.getItem("qName")==(null || "")){
     document.querySelector("section").style.display="none";
-    document.querySelector("body").innerHTML="<h2 class='no'>No quizzes are added yet</h2>"
+    document.querySelector("header").innerHTML="<h2 class='no'>No quizzes are added yet</h2>"
 }else{
     document.querySelector("section").style.display="block";  
 }

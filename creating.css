@@ -28,11 +28,14 @@ h2{
     display: block;
 }
 textarea{
+    display: block;   
     margin-top: 10px;
     border-radius: 10px;
     padding: 10px;
     border: none;
     background: rgba(245, 245, 245, 0.94);
+    width: 390px;
+    
 }
 [type="text"]{
     background: rgba(245, 245, 245, 0.886);
@@ -107,4 +110,10 @@ textarea{
     font-size: 1.05rem;
     font-weight: bolder;
     margin: 30px 20px 0px;
+}
+@media screen and (max-width:420px) {
+    textarea{
+       width: 300px;
+    }
+    
 }

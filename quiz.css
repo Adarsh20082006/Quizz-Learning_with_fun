@@ -1,22 +1,40 @@
 *{
     margin: 0px;
 }
-ul{
+.ul{
     height: 35px;
    display: flex;
     list-style: none;
-    margin-right: 10px;
     gap: 20px;
     align-items: center;
     text-decoration: none;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 10px;
 }
+
+.ul2{
+    list-style: none;
+    position: relative;
+    top: 70px;
+    background: rgba(255, 0, 0, 0.866);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    justify-content: center;
+   
+    padding: 10px;
+    transition: all 1s;
+}  
 .a{
-    color: rgb(124, 160, 198);
+    color: rgb(57, 58, 60);
    font-size: large;
     padding: 5px 3px 0px 3px;
     text-decoration: none;
     height: 28px;
     text-align: center;
+    transition: all 1s; 
 }
 .a:hover{
     background-color:rgba(255, 173, 51, 0.541) ;
@@ -30,7 +48,7 @@ nav{
     display: flex;
     justify-content:space-between;
     align-items: center;
-
+    position: relative;
     height: 30px;
     width:100%;
     background: rgb(255, 0, 0);
@@ -39,6 +57,7 @@ body{
     height: 100vh;
     background: linear-gradient(rgb(255, 112, 112),rgb(207, 45, 45),purple);
     background-repeat: no-repeat;
+
 }
 .create,.solve{
     height: 45%;
@@ -48,6 +67,11 @@ body{
     align-items: center;
     font-size: 35px;
     text-align: center;
+}
+.img{  display: none;
+    background: rgb(255, 0, 0);
+    border: none;
+    justify-content: space-between;
 }
 input[type='button']{
     height: 40px;
@@ -59,4 +83,10 @@ input[type='button']{
 }
 input[type='button']:hover{
     background: rgba(249, 233, 64, 0.774); 
+}
+@media screen and (max-width:340px) {
+.ul{
+    display: none;
+}
+.img{  display: inline;}
 }
