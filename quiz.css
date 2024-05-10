@@ -84,7 +84,7 @@ input[type='button']{
 input[type='button']:hover{
     background: rgba(249, 233, 64, 0.774); 
 }
-@media screen and (max-width:340px) {
+@media screen and (max-width:400px) {
 .ul{
     display: none;
 }
