@@ -1,4 +1,4 @@
-// export {cName,password,qName,type};
+let cName="",password="",name="",type="";
 let privates=document.querySelector(".private");
 privates.addEventListener("click",()=>{
     document.querySelector(".password").style.display="block";
@@ -17,6 +17,7 @@ show.addEventListener("click",()=>{
 })
 document.querySelector(".create").addEventListener("click",creating);
 function creating(){
+
     localStorage.setItem("cName",document.getElementById("c-name").value)
     localStorage.setItem("password",document.getElementById("password").value)
     localStorage.setItem("qName",document.getElementById("name").value)
@@ -32,4 +33,6 @@ function creating(){
         span2.textContent=localStorage.getItem("qName");   
         aside.textContent=localStorage.getItem("type");
 })
+
 }
+
